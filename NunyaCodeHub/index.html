@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NunyaCode Hub - Where Knowledge Meets Code</title>
+    <meta name="description" content="Empowering African tech talent through hands-on training in Data Analytics and Web Design. Join NunyaCode Hub launching July 7, 2025.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NunyaCode Hub</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#instructors" class="nav-link">Instructors</a>
+                <a href="student-portal.html" class="nav-link">Student Portal</a>
+                <a href="enroll.html" class="nav-link nav-cta">Enroll Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="tech-nodes" id="tech-nodes"></div>
+            <div class="adinkra-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    <span class="title-main">Where Knowledge</span>
+                    <span class="title-accent">Meets Code</span>
+                </h1>
+                <p class="hero-subtitle">Empowering African tech talent through hands-on training in Data Analytics and Web Design</p>
+                <div class="hero-cta">
+                    <a href="courses.html" class="btn btn-primary">
+                        <span>Explore Courses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="enroll.html" class="btn btn-secondary">
+                        <span>Join Now</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+                <div class="launch-countdown">
+                    <p class="countdown-label">Launching in:</p>
+                    <div class="countdown-timer" id="countdown-timer">
+                        <div class="time-unit">
+                            <span class="time-value" id="days">00</span>
+                            <span class="time-label">Days</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="hours">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="minutes">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="seconds">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Preview Section -->
+    <section id="courses" class="courses-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Courses</h2>
+                <p class="section-subtitle">Transform your career with our industry-focused programs</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card active" data-course="data-analytics">
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Analytics</h3>
+                        <p>Master data visualization, statistical analysis, and business intelligence</p>
+                        <div class="course-schedule">
+                            <i class="fas fa-calendar"></i>
+                            <span>Saturdays 10:00 AM - 1:00 PM GMT</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">Python</span>
+                            <span class="feature">SQL</span>
+                            <span class="feature">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card active" data-course="web-design">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Design</h3>
+                        <p>Create responsive, modern websites with HTML, CSS, and JavaScript</p>
+                        <div class="course-schedule">
+                            <i class="fas fa-calendar"></i>
+                            <span>Saturdays 10:00 AM - 1:00 PM GMT</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">HTML/CSS</span>
+                            <span class="feature">JavaScript</span>
+                            <span class="feature">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card coming-soon" data-course="cybersecurity">
+                    <div class="course-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Cybersecurity</h3>
+                        <p>Protect digital assets and understand security fundamentals</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                </div>
+                <div class="course-card coming-soon" data-course="uiux">
+                    <div class="course-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Design user-centered digital experiences</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-cta">
+                <a href="courses.html" class="btn btn-outline">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why NunyaCode Hub Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose NunyaCode Hub?</h2>
+                <p class="section-subtitle">Experience learning designed for African tech talent</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Hands-On Learning</h3>
+                    <p>Build real-world projects that showcase your skills to employers</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Mentorship</h3>
+                    <p>Learn from industry professionals with internship opportunities</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Job-Ready Skills</h3>
+                    <p>Career support and job placement assistance for graduates</p>
+                </div>
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>African Relevance</h3>
+                    <p>Curriculum tailored for Africa's growing tech ecosystem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Pathway -->
+    <section class="pathway-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Your Learning Journey</h2>
+                <p class="section-subtitle">From enrollment to career launch in 5 steps</p>
+            </div>
+            <div class="pathway-container">
+                <div class="pathway-step" data-animate>
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Enroll</h3>
+                        <p>Choose your course and secure your spot</p>
+                    </div>
+                </div>
+                <div class="pathway-step" data-animate>
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Learn Fundamentals</h3>
+                        <p>Master the core concepts with expert guidance</p>
+                    </div>
+                </div>
+                <div class="pathway-step" data-animate>
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Build Projects</h3>
+                        <p>Apply your skills to real-world challenges</p>
+                    </div>
+                </div>
+                <div class="pathway-step" data-animate>
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Get Certified</h3>
+                        <p>Earn your completion certificate</p>
+                    </div>
+                </div>
+                <div class="pathway-step" data-animate>
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Launch Career</h3>
+                        <p>Land your dream tech job with our support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About NunyaCode Hub</h2>
+                    <p class="about-description">
+                        "Nunya" comes from the Ewe word meaning "Knowledge" or "Skill" - the foundation of everything we do. 
+                        Founded in 2025, NunyaCode Hub was created to bridge Africa's tech skills gap through AI-enhanced 
+                        learning experiences.
+                    </p>
+                    <p class="about-description">
+                        We believe that every African deserves access to world-class tech education. Our programs are 
+                        designed specifically for the African context, preparing students for the opportunities in our 
+                        rapidly growing digital economy.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Students Expected</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Core Programs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Job Placement Goal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-element"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Instructors</h2>
+                <p class="section-subtitle">Learn from industry experts with years of experience</p>
+            </div>
+            <div class="instructors-grid">
+                <div class="instructor-card" data-animate>
+                    <div class="instructor-image">
+                        <img src="https://pixabay.com/get/g59120b49c51cb704d04fe808bee8bb6850b23b342552d9e6c98d9f155d6bc07d55009479f5049440ec2f6e200b37022f6442c2d4fdd374626c93a4ac881f914e_1280.jpg" alt="Ama Kwesi" loading="lazy">
+                        <div class="instructor-overlay">
+                            <div class="instructor-bio">
+                                <p>Senior Web Developer with 8+ years experience at top African fintech companies. Passionate about teaching modern web technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Ama Kwesi</h3>
+                        <p class="instructor-role">Web Design Instructor</p>
+                        <div class="instructor-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card" data-animate>
+                    <div class="instructor-image">
+                        <img src="https://pixabay.com/get/gd7ff2c79bab4782086d936a52f427933fe8f3c31a7936790e0e3d69c6efbb11468a803be24fe254d6681139e66522039a8f4081f281a2e2c5ecb5fc6d9b4d994_1280.jpg" alt="Kofi Mensah" loading="lazy">
+                        <div class="instructor-overlay">
+                            <div class="instructor-bio">
+                                <p>Data Scientist with expertise in machine learning and business intelligence. Former analytics lead at major African banks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Kofi Mensah</h3>
+                        <p class="instructor-role">Data Analytics Instructor</p>
+                        <div class="instructor-skills">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-subtitle">Success stories from our community</p>
+            </div>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"NunyaCode Hub transformed my career! The hands-on approach and mentorship made all the difference."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://pixabay.com/get/g4a20a2a4865b832877c75214586d0641aaf371cc14017c03ab2be736feca8f127ea83af7348d82934f42253d28e842db666ffca831b3eb86e80ffac32ea1a28e_1280.jpg" alt="Ayodeji" loading="lazy">
+                            <div class="author-info">
+                                <h4>Ayodeji</h4>
+                                <p>Web Design Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Amazing mentorship and practical projects. I landed my dream job just 3 months after graduation!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://pixabay.com/get/gc8ed47ead584ecee663f284f29d7d56d29d7d56d29d53f438847836c134aeabb1ace11b78cb6fe3b71766455fd4af1c4cd9f8bff5f78a794ac3ac006e1221914e0c87187_1280.jpg" alt="Zuri" loading="lazy">
+                            <div class="author-info">
+                                <h4>Zuri</h4>
+                                <p>Data Analytics Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The African-focused curriculum and supportive community made learning enjoyable and relevant."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://pixabay.com/get/g99b222045ea2a9b36b66e98491889eac66cfdae26ff41d599eda78b4a8d733c78bb76509f76c69ba4f5dc72f580a04a25380df3fa889cda86093bb977b0bf335_1280.jpg" alt="Amara" loading="lazy">
+                            <div class="author-info">
+                                <h4>Amara</h4>
+                                <p>Current Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prev-testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="carousel-btn next" id="next-testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">NunyaCode Hub</span>
+                        <p>Where Knowledge Meets Code</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://wa.me/233552121155" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:info@nunyacodehub.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="enroll.html">Enroll</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@nunyacodehub.com</p>
+                        <p><i class="fas fa-phone"></i> +233 552121155</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NunyaCode Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

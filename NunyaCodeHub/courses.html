@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - NunyaCode Hub</title>
+    <meta name="description" content="Explore our comprehensive tech courses in Data Analytics and Web Design. Join NunyaCode Hub and transform your career.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">NunyaCode Hub</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link active">Courses</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#instructors" class="nav-link">Instructors</a>
+                <a href="enroll.html" class="nav-link nav-cta">Enroll Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Our Courses</h1>
+                <p>Transform your career with industry-focused programs designed for African tech talent</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+                <button class="filter-btn" data-filter="coming-soon">Coming Soon</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-detailed">
+        <div class="container">
+            <div class="bento-grid">
+                <!-- Data Analytics Course -->
+                <div class="course-detailed active" data-category="data-analytics">
+                    <div class="course-header">
+                        <div class="course-icon-large">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="course-badge">Available Now</div>
+                    </div>
+                    <div class="course-info">
+                        <h2>Data Analytics Mastery</h2>
+                        <p class="course-description">Master the art of turning raw data into actionable business insights. Learn Python, SQL, statistical analysis, and data visualization with tools like Tableau and Power BI.</p>
+                        <div class="course-schedule">
+                            <div class="schedule-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Saturdays 10:00 AM - 1:00 PM GMT</span>
+                            </div>
+                            <div class="schedule-item">
+                                <i class="fas fa-clock"></i>
+                                <span>12 Week Program</span>
+                            </div>
+                        </div>
+                        <div class="course-curriculum">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Python for Data Analysis</li>
+                                <li>SQL Database Management</li>
+                                <li>Statistical Analysis & Modeling</li>
+                                <li>Data Visualization with Tableau</li>
+                                <li>Business Intelligence Dashboards</li>
+                                <li>Machine Learning Fundamentals</li>
+                            </ul>
+                        </div>
+                        <div class="course-projects">
+                            <h4>Sample Projects:</h4>
+                            <div class="project-gallery">
+                                <div class="project-item">
+                                    <img src="https://pixabay.com/get/g93c075e1d8f239913495fab5da5e1b498f765f98141914a456d314e55f55cfe47bdca33fbb0b2e4976b6a791ac127f212b7aa130f30f94637afb6074841b6227_1280.jpg" alt="Sales Dashboard" loading="lazy">
+                                    <div class="project-overlay">
+                                        <h5>Sales Analytics Dashboard</h5>
+                                        <p>Interactive dashboard for sales performance tracking</p>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <img src="https://pixabay.com/get/gf7ee2af6af500c4b87a42790c848077476bdc6cfc6a77597cfd36fa65da88eac6bd75c0d2843fcff92a5b92eeab3956e6c217457b8dc322fc94e75a12e6ef43a_1280.jpg" alt="Financial Analysis" loading="lazy">
+                                    <div class="project-overlay">
+                                        <h5>Financial Performance Analysis</h5>
+                                        <p>Comprehensive financial data analysis and reporting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cta">
+                            <a href="enroll.html?course=data-analytics" class="btn btn-primary">Enroll Now</a>
+                            <span class="course-price">Contact for Pricing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Design Course -->
+                <div class="course-detailed active" data-category="web-design">
+                    <div class="course-header">
+                        <div class="course-icon-large">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="course-badge">Available Now</div>
+                    </div>
+                    <div class="course-info">
+                        <h2>Modern Web Design</h2>
+                        <p class="course-description">Create stunning, responsive websites from scratch. Master HTML, CSS, JavaScript, and modern frameworks to build professional web applications.</p>
+                        <div class="course-schedule">
+                            <div class="schedule-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Saturdays 10:00 AM - 1:00 PM GMT</span>
+                            </div>
+                            <div class="schedule-item">
+                                <i class="fas fa-clock"></i>
+                                <span>16 Week Program</span>
+                            </div>
+                        </div>
+                        <div class="course-curriculum">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>HTML5 & Semantic Markup</li>
+                                <li>Advanced CSS3 & Animations</li>
+                                <li>JavaScript & DOM Manipulation</li>
+                                <li>React.js Framework</li>
+                                <li>Responsive Design Principles</li>
+                                <li>Web Performance Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="course-projects">
+                            <h4>Sample Projects:</h4>
+                            <div class="project-gallery">
+                                <div class="project-item">
+                                    <img src="https://pixabay.com/get/g3fedaf9ac4d487876375fd2eedfaa958c9f8613cd646438d165c4ad130a8082074e4ec42909a745ebdff70c2e5c3cd87b4f8931af28549747cc46ebc78ef6e4b_1280.jpg" alt="E-commerce Website" loading="lazy">
+                                    <div class="project-overlay">
+                                        <h5>E-commerce Platform</h5>
+                                        <p>Full-featured online store with payment integration</p>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <img src="https://pixabay.com/get/gaaa792fb6b4e12eedf1018a2b4a47ffda00f968c92cc95636bd174e632795a26e9fa4134ae990b1658bb6fd82b742e2a9d83f07ee3a2b9f517e278d388df61ee_1280.jpg" alt="Portfolio Website" loading="lazy">
+                                    <div class="project-overlay">
+                                        <h5>Professional Portfolio</h5>
+                                        <p>Showcase website with interactive animations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cta">
+                            <a href="enroll.html?course=web-design" class="btn btn-primary">Enroll Now</a>
+                            <span class="course-price">Contact for Pricing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Course (Coming Soon) -->
+                <div class="course-detailed coming-soon" data-category="coming-soon">
+                    <div class="course-header">
+                        <div class="course-icon-large grayscale">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="course-badge coming">Coming Soon</div>
+                    </div>
+                    <div class="course-info">
+                        <h2>Cybersecurity Fundamentals</h2>
+                        <p class="course-description">Protect digital assets and understand security fundamentals. Learn ethical hacking, network security, and threat assessment.</p>
+                        <div class="course-features-preview">
+                            <div class="feature-preview">
+                                <i class="fas fa-bug"></i>
+                                <span>Ethical Hacking</span>
+                            </div>
+                            <div class="feature-preview">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Network Security</span>
+                            </div>
+                            <div class="feature-preview">
+                                <i class="fas fa-lock"></i>
+                                <span>Encryption</span>
+                            </div>
+                        </div>
+                        <div class="course-cta">
+                            <button class="btn btn-disabled" disabled>Notify Me</button>
+                            <span class="course-launch">Launching Q3 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Course (Coming Soon) -->
+                <div class="course-detailed coming-soon" data-category="coming-soon">
+                    <div class="course-header">
+                        <div class="course-icon-large grayscale">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="course-badge coming">Coming Soon</div>
+                    </div>
+                    <div class="course-info">
+                        <h2>UI/UX Design</h2>
+                        <p class="course-description">Design user-centered digital experiences. Master design thinking, prototyping, and user research methodologies.</p>
+                        <div class="course-features-preview">
+                            <div class="feature-preview">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <span>Design Systems</span>
+                            </div>
+                            <div class="feature-preview">
+                                <i class="fas fa-users"></i>
+                                <span>User Research</span>
+                            </div>
+                            <div class="feature-preview">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                        <div class="course-cta">
+                            <button class="btn btn-disabled" disabled>Notify Me</button>
+                            <span class="course-launch">Launching Q4 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Course Recommendation -->
+    <section class="ai-recommendation">
+        <div class="container">
+            <div class="recommendation-content">
+                <h2>Not Sure Which Course to Choose?</h2>
+                <p>Let our AI help you find the perfect course based on your interests and career goals.</p>
+                <div class="recommendation-quiz">
+                    <div class="quiz-question">
+                        <h3>What interests you most?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-course="data-analytics">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Working with numbers and insights</span>
+                            </button>
+                            <button class="quiz-option" data-course="web-design">
+                                <i class="fas fa-palette"></i>
+                                <span>Creating beautiful interfaces</span>
+                            </button>
+                            <button class="quiz-option" data-course="cybersecurity">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Protecting digital systems</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="quiz-result" style="display: none;">
+                        <div class="result-content">
+                            <h4>Perfect Match Found!</h4>
+                            <p id="recommendation-text"></p>
+                            <a href="#" id="recommendation-link" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">NunyaCode Hub</span>
+                        <p>Where Knowledge Meets Code</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://wa.me/233552121155" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:info@nunyacodehub.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="enroll.html">Enroll</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@nunyacodehub.com</p>
+                        <p><i class="fas fa-phone"></i> +233 552121155</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NunyaCode Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Preview - NunyaCode Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .preview-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .preview-controls {
+            background: rgba(46, 67, 116, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--soft-white);
+            font-weight: 500;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--gray-medium);
+            border-radius: 6px;
+            background: var(--deep-space);
+            color: var(--soft-white);
+        }
+        .email-preview {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .preview-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .email-meta {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">NunyaCode Hub</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="enroll.html" class="nav-link">Enroll</a>
+                <a href="email-preview.html" class="nav-link active">Email Preview</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="preview-container" style="margin-top: 100px;">
+        <div class="section-header">
+            <h1>Email Template System Preview</h1>
+            <p>Test the personalized welcome email generation for different courses</p>
+        </div>
+
+        <div class="preview-controls">
+            <h3>Student Information</h3>
+            <form id="preview-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="preview-firstName">First Name</label>
+                        <input type="text" id="preview-firstName" value="Kwame" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preview-lastName">Last Name</label>
+                        <input type="text" id="preview-lastName" value="Asante" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preview-email">Email</label>
+                        <input type="email" id="preview-email" value="kwame.asante@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preview-course">Course</label>
+                        <select id="preview-course" required>
+                            <option value="data-analytics">Data Analytics Mastery</option>
+                            <option value="web-design">Modern Web Design</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Generate Email Preview</button>
+            </form>
+        </div>
+
+        <div id="email-output" style="display: none;">
+            <div class="preview-header">
+                <h3><i class="fas fa-envelope"></i> Generated Email Preview</h3>
+                <p>This is how the personalized welcome email will look for the student</p>
+            </div>
+            
+            <div class="email-meta" id="email-meta">
+                <!-- Email metadata will be inserted here -->
+            </div>
+            
+            <div class="email-preview" id="email-content">
+                <!-- Email content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Email preview functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const previewForm = document.getElementById('preview-form');
+            const emailOutput = document.getElementById('email-output');
+            const emailMeta = document.getElementById('email-meta');
+            const emailContent = document.getElementById('email-content');
+
+            previewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const studentData = {
+                    firstName: document.getElementById('preview-firstName').value,
+                    lastName: document.getElementById('preview-lastName').value,
+                    email: document.getElementById('preview-email').value,
+                    course: document.getElementById('preview-course').value
+                };
+
+                // Use the email template system from script.js
+                if (typeof emailTemplateSystem !== 'undefined') {
+                    const emailData = emailTemplateSystem.generateWelcomeEmailContent(studentData);
+                    
+                    if (emailData) {
+                        // Show email metadata
+                        emailMeta.innerHTML = `
+                            <strong>To:</strong> ${emailData.to}<br>
+                            <strong>Subject:</strong> ${emailData.subject}<br>
+                            <strong>Student:</strong> ${emailData.studentName}<br>
+                            <strong>Course:</strong> ${emailData.courseName}
+                        `;
+                        
+                        // Show email content
+                        emailContent.innerHTML = emailData.html;
+                        
+                        // Show the preview
+                        emailOutput.style.display = 'block';
+                        emailOutput.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        alert('Error generating email preview. Please check your inputs.');
+                    }
+                } else {
+                    alert('Email template system not loaded. Please refresh the page.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

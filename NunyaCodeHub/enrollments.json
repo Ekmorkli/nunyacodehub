@@ -1,0 +1,28 @@
+[
+  {
+    "firstName": "Kekeli",
+    "lastName": "Bieteru",
+    "email": "ericmorkli59@gmail.com",
+    "phone": "0539985980",
+    "course": "web-design",
+    "experience": "some-experience",
+    "motivation": "",
+    "newsletter": true,
+    "enrollmentDate": "2025-06-14T21:11:29.247Z"
+  },
+  {
+    "firstName": "Sandra ",
+    "lastName": "Bieteru",
+    "email": "sandrabieteru@gmail.com",
+    "phone": "0208566215",
+    "course": "web-design",
+    "experience": "some-experience",
+    "motivation": "",
+    "newsletter": true,
+    "enrollmentDate": "2025-06-14T21:51:30.782Z",
+    "passwordHash": "83af07527878af1ea33c522a19051030f59981acfbc16d6ec3716816a1d2cf3c0679bcc85e428b7db93a20ea258ccf7f18f1b749ace40ef47bb02f73f3a4b522",
+    "passwordSalt": "21303f8dc2ef3979b74fa0d57ea80e92dce9b051386e3fd705114af7f5eee5e4",
+    "passwordSet": true,
+    "lastLogin": "2025-06-14T22:23:47.805Z"
+  }
+]

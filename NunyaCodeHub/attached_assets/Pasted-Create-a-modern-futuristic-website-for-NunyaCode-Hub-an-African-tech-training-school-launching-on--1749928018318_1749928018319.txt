@@ -1,0 +1,53 @@
+Create a modern, futuristic website for NunyaCode Hub, an African tech training school launching on July 7, 2025, focused on empowering tech talent across Africa. The website will be hosted on GitHub Pages and developed exclusively using HTML, CSS, and JavaScript (no external frameworks like React or Bootstrap). The design should reflect NunyaCode Hub’s mission to nurture growth (“nunya” from the Ewe word meaning “Knowledge”), with a strong emphasis on Data Analytics and Web Design courses, while hinting at future offerings (Cybersecurity, UI/UX, Networking).
+Design Goals
+Aesthetic: Embrace a dark mode theme with a palette of #1a1f2e (deep space), #2e4374 (tech blue), #4a2c6f (purple depth), and #00ffcc (vibrant green accent), aligning with 2025’s low-light UI trend.
+Trends to Incorporate:
+Dark Mode & Low-Light UI: Prioritize eye comfort and aesthetic appeal for late-night learners.
+AI-Driven Personalization: Suggest courses (e.g., Data Analytics for problem-solvers) based on user input.
+3D Elements & Immersive Experiences: Use 3D animations (e.g., tech nodes) or AR previews for course samples.
+Sustainable Design: Optimize assets (e.g., WebP images) and lean code for reduced carbon footprint.
+Micro-Interactions: Add subtle animations (e.g., button hovers, field highlights) for engagement.
+Bold Typography & Organic Shapes: Use expressive fonts (e.g., Orbitron) and asymmetrical layouts with Adinkra-inspired curves.
+Scroll-Based Storytelling: Reveal content dynamically (e.g., roadmap steps) as users scroll.
+Minimalism with Purposeful Whitespace: Ensure clean layouts to focus on course content.
+Cultural Identity: Include subtle African design hints (e.g., circular SVG patterns inspired by Adinkra symbols) without overwhelming the tech style.
+Responsiveness: Adopt a mobile-first approach with a seamless experience across devices.
+Accessibility: Ensure WCAG 2.1 compliance with high-contrast options and ARIA labels.
+Target Audience
+Tech enthusiasts and learners across Africa (62% mobile traffic), aged 18-35, seeking practical, job-ready skills with a focus on Data Analytics and Web Design. The design should appeal to a youthful, interactive audience while supporting late-night study habits.
+Required Sections
+Hero Section:
+Logo (placeholder: “NunyaCode Hub”), tagline (“Where Knowledge Meets Code”), animated 3D background (e.g., rotating tech nodes or African map outline).
+CTA buttons: “Explore Courses” (links to courses.html), “Join Now” (links to enroll.html) with micro-animations (e.g., ripple effect).
+Courses Section (on index.html and detailed on courses.html):
+Highlight Data Analytics and Web Design with schedules (Saturdays 10:00 AM - 1:00 PM GMT, 
+Include “Coming Soon” placeholders for Cybersecurity, UI/UX, and Networking with grayscale 3D effects.
+Use a Bento grid layout on courses.html with hover effects to reveal project samples (e.g., data dashboards, responsive websites).
+Filterable cards on courses.html (categories: All, Web Design, Data Analytics, Coming Soon).
+Why NunyaCode Hub:
+Icons and text for: Hands-On Learning (practical projects), Mentorship (expert guidance, internship opportunities), Job-Readiness (career support, job placement), African Relevance (tailored for Africa’s tech ecosystem).
+Learning Pathway Roadmap:
+Horizontal scroll or step-by-step blocks: 1. Enroll, 2. Learn Fundamentals, 3. Build Projects, 4. Gain Certification, 5. Launch Career, with scroll-triggered animations.
+About Us:
+Story of “Nunya” (Ewe “knowledge” or “Skill”), founded in 2025 to bridge Africa’s tech skills gap with AI-enhanced learning.
+Team profiles (e.g., Ama Kwesi for Web Design, Kofi Mensah for Data Analytics) with hover bios and photos.
+Instructor Section:
+Hover bios and photos for instructors 
+Student Testimonials:
+Carousel with quotes (e.g., “NunyaCode transformed my career!” - Ayodeji, Web Design; “Amazing mentorship” - Zuri, Data Analytics) and images.
+Upcoming Events or Cohorts:
+Countdown timer to July 7, 2025, launch, with a call-to-action to enroll.
+Footer:
+Contact info (info@nunyacodehub.com, +233 552121155), social links (Whatsapp @NunyaCodeHub, LinkedIn), newsletter signup, mini site map (Home, Courses, About, Enroll).
+Enrollment Page (enroll.html):
+Form with fields: First Name, Last Name, Email, Phone, Course (dropdown: Data Analytics, Web Design).
+Post-submission welcome email to the student 
+Confirmation message 
+Technical Specifications
+Development: Pure HTML, CSS, and JavaScript, hosted on GitHub Pages 
+Additional Context
+Brand Identity: Reflects a nurturing, growth-oriented mission with a futuristic tech edge, targeting African learners.
+Deliverables
+Complete index.html, courses.html, enroll.html, styles.css, and script.js files.
+Prototype with 3D/AR elements and AI personalization (e.g., course suggestion logic).
+Optimized for mobile-first responsiveness and sustainability (e.g., WebP images, lazy loading).
